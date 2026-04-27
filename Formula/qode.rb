@@ -5,21 +5,21 @@
 class Qode < Formula
   desc "Generates structured AI prompts for a standardized developer workflow"
   homepage "https://github.com/nqode-io/qode"
-  version "0.3.2-beta"
+  version "0.3.3-beta"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nqode-io/qode/releases/download/v0.3.2-beta/qode_v0.3.2-beta_darwin_amd64.tar.gz"
-      sha256 "34f7681483b5d4cf9b88b62f87a418749581f26384967c8a848d8846e6a8f354"
+      url "https://github.com/nqode-io/qode/releases/download/v0.3.3-beta/qode_v0.3.3-beta_darwin_amd64.tar.gz"
+      sha256 "3ee94a1c58f195d9308a9fb668a0c91d5ff67e0bfb178ec34e43ec7bd1121aa6"
 
       define_method(:install) do
         bin.install "qode"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nqode-io/qode/releases/download/v0.3.2-beta/qode_v0.3.2-beta_darwin_arm64.tar.gz"
-      sha256 "7258d0607bb7ef246d506c51729c43075e98f1e8e473912d58399f1660f143d4"
+      url "https://github.com/nqode-io/qode/releases/download/v0.3.3-beta/qode_v0.3.3-beta_darwin_arm64.tar.gz"
+      sha256 "4694f6586bfcc661828b39eed1e16254e35d887412894f82ec861f13561f8e1f"
 
       define_method(:install) do
         bin.install "qode"
@@ -29,15 +29,15 @@ class Qode < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nqode-io/qode/releases/download/v0.3.2-beta/qode_v0.3.2-beta_linux_amd64.tar.gz"
-      sha256 "619843605a0e99e5a4666f19a918805b8b748c62a8b593a5b0b50bd1f0fff2c4"
+      url "https://github.com/nqode-io/qode/releases/download/v0.3.3-beta/qode_v0.3.3-beta_linux_amd64.tar.gz"
+      sha256 "d784fe4750720bb90fd9dfad6551c154771eb17a3f85ea1f96476e46a66b4685"
       define_method(:install) do
         bin.install "qode"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nqode-io/qode/releases/download/v0.3.2-beta/qode_v0.3.2-beta_linux_arm64.tar.gz"
-      sha256 "a2191945f6915f239863e3a3194444ca52d629174fe96145914d01541da8a93c"
+      url "https://github.com/nqode-io/qode/releases/download/v0.3.3-beta/qode_v0.3.3-beta_linux_arm64.tar.gz"
+      sha256 "aa0a89cc00913e2d62dac4decf4027df0fcfee0608de90b0d2c93a85f87e89e0"
       define_method(:install) do
         bin.install "qode"
       end
